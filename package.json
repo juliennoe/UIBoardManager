@@ -1,0 +1,18 @@
+{
+    "name": "com.juliennoe.uiboardmanager",
+    "displayName": "UI Board Manager",
+    "version": "1.0.0",
+    "unity": "2023.1",
+    "description": "Unity Editor tool for managing UI board elements including Button Reference, Font Preview, Color Manager, and Notes.",
+    "keywords": [
+        "UI",
+        "Editor",
+        "Tool",
+        "Technical Artist"
+    ],
+    "author": {
+        "name": "Julien Noé",
+        "url": "https://github.com/juliennoe"
+    },
+    "dependencies": {}
+}
