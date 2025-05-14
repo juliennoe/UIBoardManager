@@ -13,7 +13,7 @@ using Object = UnityEngine.Object;
 public class UIBoardManager : EditorWindow 
 {
     // Tabs available in the toolbar
-    private enum Tabs { ButtonReference, FontPreview, ColorManager, Notes }
+    private enum Tabs { ColorManager, ButtonReference, FontPreview, Notes }
 
     // Currently selected tab
     private Tabs selectedTab;
@@ -29,7 +29,7 @@ public class UIBoardManager : EditorWindow
     private class ButtonCategory
     {
         /// <summary>Name of this button category.</summary>
-        public string name = "New Category";
+        public string name = "New Button";
 
         /// <summary>Whether the foldout is expanded or collapsed.</summary>
         public bool isExpanded = true;
@@ -220,9 +220,9 @@ public class UIBoardManager : EditorWindow
         // Invoke the appropriate draw method
         switch (selectedTab)
         {
+            case Tabs.ColorManager:    DrawColorManagerTab();    break;
             case Tabs.ButtonReference: DrawButtonReferenceTab(); break;
             case Tabs.FontPreview:     DrawFontPreviewTab();     break;
-            case Tabs.ColorManager:    DrawColorManagerTab();    break;
             case Tabs.Notes:           DrawNotesTab();           break;
         }
     }
